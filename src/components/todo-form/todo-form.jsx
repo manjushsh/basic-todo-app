@@ -39,10 +39,10 @@ export const TodoForm = () => {
         onChange={(e) => setTask(e.target.value)}
         onKeyUp={handleKeyUp}
       />
-      <button type="button" className="button-add" onClick={handleAddTodo}>
+      <button disabled={task && !task.length} type="button" className="button-add" onClick={handleAddTodo}>
         Add task
       </button>
-      <button type="button" className="btn btn-danger" onClick={clearAllCompletedTodo}>
+      <button disabled={!(todos.filter((todo) => todo && todo.checked).length)} type="button" className="btn btn-danger" onClick={clearAllCompletedTodo}>
         Clear Completed ToDos
       </button>
     </div>
