@@ -63,7 +63,7 @@
     "eslint-plugin-testing-library": "^3.9.2",
     "eslint-webpack-plugin": "^2.5.2",
     "firebase": "^9.8.3",
-    "firebase-tools": "^11.1.0"
+    "firebase-tools": "^11.22.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
